@@ -1,0 +1,30 @@
+/* Custom backdrop style */
+.custom-backdrop {
+  background-color: rgba(0, 0, 0, 0.8); /* Darker backdrop */
+}
+
+/* Custom dialog style */
+.custom-dialog .modal-content {
+  background: none; /* Dark background for the modal content */
+  /* border-radius: 10px; */
+  /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.9); */
+}
+
+/* Ensure the header and body have no white background */
+.custom-dialog .modal-header,
+.custom-dialog .modal-body,
+.custom-dialog .modal-footer {
+  background-color: #212529; /* Consistent dark background */
+  border-color: #333; /* Dark border color */
+}
+
+.custom-dialog .modal-header .modal-title {
+  color: #7668f6; /* Title color */
+  font-family: "Press Start 2P", cursive;
+}
+
+.custom-dialog .modal-body,
+.custom-dialog .modal-footer {
+  color: #7668f6; /* Body text color */
+  font-family: "Press Start 2P", cursive;
+}

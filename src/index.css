@@ -1,0 +1,118 @@
+/* Google Fonts */
+@import url(https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Pirata+One&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap);
+
+:root {
+  font-family: Caveat, cursive;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --font-size-base: 16px; /* Use base font size variable */
+}
+
+body {
+  margin: 0;
+  min-width: 320px; /* Minimum width for smaller devices */
+  min-height: 100vh;
+  max-height: 100vh;
+  font-family: "Press Start 2P", cursive;
+  background-image: url("/public/BG.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  font-size: var(--font-size-base); /* Base font size for body text */
+}
+
+/* Responsive Typography */
+h1 {
+  font-size: 2.5rem; /* Use rem units for responsiveness */
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* Light Mode Adjustments */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #060606;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  :root {
+    --font-size-base: 14px; /* Adjust base font size for tablets */
+  }
+
+  h1 {
+    font-size: 2rem; /* Adjust heading size for tablets */
+  }
+
+  button {
+    padding: 0.5em 1em; /* Adjust button padding for tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --font-size-base: 12px; /* Smaller font size for mobile devices */
+  }
+
+  h1 {
+    font-size: 1.8rem; /* Smaller heading size for mobile */
+  }
+
+  button {
+    padding: 0.4em 0.8em; /* Compact button padding for mobile */
+  }
+}
+
+@media (max-width: 681px) {
+  body {
+    background-size: auto; 
+    background-image: none;
+    background-color: #646cff;
+
+  }
+
+  h1 {
+    font-size: 1.5rem; /* Smaller heading for very small screens */
+  }
+
+  button {
+    font-size: 0.9em; /* Slightly smaller button text for very small screens */
+  }
+}
